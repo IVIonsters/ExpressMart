@@ -46,21 +46,26 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // update a category by its `id` value
   try {
-    const categoryData = await Category.update({
-      category_name: req.body.category_name,
-    }, {
-      where: {
-        id: req.params.id,
-      },
-    });
-    if (!categoryData) {
-      res.status(404).json({ message: 'No category found with that id!' });
-      return;
+    const CategoryId = req.params.id;
+    const { category_name } = req.body;
+    // update a category by its `id` value
+    const [numUpdatedRows] = await Category.update(
+      { category_name },
+      {
+        where: { id: CategoryId },
+      }
+    );
+    //check if the category was updated
+    if (numUpdatedRows === 0) {
+      return res.status(404).json({ message: 'No category found with that id!' });
     }
+    //Fetch the updated category
+    const updatedCategory = await Category.findByPk(CategoryId);
+    res.status(200).json(updatedCategory);
   } catch (error) {
-    res.status(500).json(error);
+    console.error("Error updating category: ", error);
+    res.status(500).json( {error: "server eror updating category" });
   }
 });
 
