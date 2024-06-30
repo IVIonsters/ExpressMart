@@ -1,4 +1,4 @@
-# Note-Taker
+# Express-Mart
 
 ## Table of Contents
 
@@ -6,19 +6,17 @@
 * [Languages](#languages)
 * [Features](#features)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)  
 
 
 ## Description
 
-<p> Note taking application designed to help keep track of thoughts and increase organization.</P>
+<p> E-commerce backend that uses Express, Sequelize to interact with a PostgreSQL database. </P>
 
 ## Languages
 
-* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+* ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 
@@ -26,26 +24,22 @@
 
 ## Features
 
-* **Auto-Recall:** Application will automatically call notes from storage on application loading.
-* **Hidden / Save Create Buttons:** Buttons are hidden until text has been input into both fields. 
-* **automatic ID Generation:** USES Npm packages to generate unique ID's for each note.
-* **Logging / Debug Integrated:** Application returns specific errors or faults for each section in the event of an error for easier debugging.
+* **Product Management:** Allows CRUD operations (Create, Read, Update, Delete) for products, including adding new products, updating existing ones, and deleting them.
+* **Category Management:** Enables CRUD operations for product categories, allowing users to add, view, update, and delete categories.
+* **Tagging System:** Supports tagging products with multiple tags for better organization and searchability.
+* **Database Integration:** Uses Sequelize ORM for database management, ensuring efficient data storage and retrieval operations.
 
 ## Usage
 
 * npm install to load all necessary packages if running locally, hosting on port 3001.
-* Node server.js to start if running local.
+* npm start or node server.js will launch the server.
 
-* [Note-Taker-Live-Via-Render](https://note-taker-ux3z.onrender.com)
+* [ExpressMart Repo ](https://github.com/IVIonsters/ExpressMart)
+* Video Thumbnail - [Click to Watch ⇩⇩](https://drive.google.com/file/d/1bBuWVku74mv3y-5hRF8bAEabIPc9ndNk/view?usp=sharing)
 
-* [Note-Taker Repository](https://github.com/IVIonsters/Note-Taker)
+[![Video Thumbnail](https://drive.google.com/thumbnail?id=1bBuWVku74mv3y-5hRF8bAEabIPc9ndNk)](https://drive.google.com/file/d/1bBuWVku74mv3y-5hRF8bAEabIPc9ndNk/view?usp=sharing)
 
-* ![SCREENSHOTS GO HERE](./Assets/NoteGIF.gif)
-
-
-## Credits
-
-* [N/A](N/A)
+* ![SCREENSHOTS GO HERE](./Assets/final.png)
 
 ## License
 
